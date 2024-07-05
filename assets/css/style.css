@@ -32,7 +32,7 @@ header {
   align-items: flex-end; /* Centra verticalmente los elementos */
   padding: 20px;
   background-color: gray;
-  /*justify-content: flex-end;*/
+  justify-content: flex-end;
   /*justify-content: space-between;*/ /* Distribuye el espacio entre el título y la barra de búsqueda */
 }
 .wk_h1 h1 {
