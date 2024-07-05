@@ -1,90 +1,252 @@
 /* style.css */
+
+.fondo {
+  /*height: 268px;*/
+  background-image: url(../img/portada.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  padding: 70px 150px;
+}
+
+.navigate {
+  display: flex-start;
+}
+
 body {
-    font-family: Arial, sans-serif;
-  }
-  
-  header {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .search-bar {
-    display: flex;
-    justify-content: center;
-    margin: 10px 0;
-  }
-  
-  .search-bar input {
-    padding: 5px;
-    font-size: 16px;
-  }
-  
-  .search-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .search-button .icon {
-    width: 20px;
-    height: 20px;
-  }
-  
-  .user-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 10px;
-  }
-  
-  .user-icons .icon {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-  }
-  
-  .book-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .book {
-    text-align: center;
-    width: 200px;
-  }
-  
-  .book-thumbnail {
-    width: 100%;
-    height: auto;
-  }
-  
-  .price {
-    color: green;
-    font-weight: bold;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #f1f1f1;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.container {
+  display: flex;
+  align-items: flex-end; /* Centra verticalmente los elementos */
+  padding: 20px;
+  background-color: gray;
+  /*justify-content: flex-end;*/
+  /*justify-content: space-between;*/ /* Distribuye el espacio entre el título y la barra de búsqueda */
+}
+.wk_h1 h1 {
+  margin: 0;
+  background-color: red;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  justify-content: center;
+  padding: 10px;
+  /*text-align: right;*/
+  /*width: 50%;*/
+  /*display: flex;
+  text-align: center;
+  margin: 10px 0;
+  font-size: 30px;
+  font-weight: 300;
+  padding-top: 10px;*/
+  /*height: 45px;*/ /* Establece la altura fija para las filas */
+  /*overflow: hidden;*/ /* Asegura que el contenido no exceda la altura establecida */
+}
+
+.search-bar {
+  grid-column: 1/4;
+  grid-row: 4/5;
+  background-color: aqua;
+  display: flex;
+  justify-content: right;
+  padding: 10px;
+  /*width: 50%;*/
+  /*margin: 10px 0;
+  */
+}
+
+.search-bar input {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.user-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.user-icons img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+nav ul {
+  display: flex;
+  gap: 10px; /* Espacio entre los enlaces */
+  padding: 20px;
+  background-color: #f8f8f8;
+  margin: 0 auto; /* Centrar el contenedor */
+  text-align: center;
+}
+
+.wk-ul-1 {
+  list-style-type: none; /* Elimina los marcadores de lista */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Convierte la lista en un contenedor flexible */
+  justify-content: center; /* Centra los elementos horizontalmente */
+}
+.wk-il-1 {
+  margin-right: 100px; /* Espacio entre elementos de la lista */
+  padding: 0.5px;
+  /*background-color: lightblue;*/ /* Solo para visualización */
+}
+li:last-child {
+  margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+/*
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+.recommendations, .books, .about {
+  margin-bottom: 40px;
+}
+
+h2 {
+  text-align: center;
+  color: #b22222;
+}
+
+.book-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.book {
+  text-align: center;
+  width: 150px;
+}
+
+.book img {
+  width: 100%;
+  height: auto;
+}
+
+.book .price {
+  color: green;
+  font-weight: bold;
+}
+
+.book .btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #b22222;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.about img {
+  display: block;
+  margin: 20px auto;
+  width: 80%;
+  height: auto;
+}
+
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.footer-section {
+  width: 30%;
+}
+
+.footer-section h3 {
+  margin-top: 0;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.subscribe-button {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #b22222;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer p {
+  margin-top: 20px;
+  font-size: 14px;
+}
+*/

@@ -3,55 +3,169 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tienda de Libros</title>
+    <title>El Túnel - Tienda de Libros</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <header>
-      <h1>Tienda de Libros</h1>
-      <div class="search-bar">
-        <input type="text" placeholder="Buscar título del libro" />
-        <button class="search-button">
-          <img src="search-icon.png" alt="Buscar" class="icon" />
-        </button>
+      <div class="container">
+        <div class="wk_h1">
+          <h1>El Túnel</h1>
+        </div>
+
+        <div class="search-bar">
+          <input type="text" placeholder="Buscar" />
+          <button class="search-button">
+            <img src="./assets/img/lupa.png" alt="Buscar" />
+          </button>
+          <div class="user-icons">
+            <img src="./assets/img/perfil.png" alt="Log In" class="icon" />
+            <img src="./assets/img/favorito.png" alt="Favoritos" class="icon" />
+            <img
+              src="./assets/img/portafolio.png"
+              alt="Portafolio"
+              class="icon"
+            />
+          </div>
+        </div>
+
       </div>
-      <div class="user-icons">
-        <img src="login-icon.png" alt="Log In" class="icon" />
-        <img src="favorites-icon.png" alt="Favoritos" class="icon" />
-        <img src="portfolio-icon.png" alt="Portafolio" class="icon" />
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Libros</a></li>
-          <li><a href="#">Los más leídos</a></li>
-          <li><a href="#">Accesorios</a></li>
-          <li><a href="#">Sucursal</a></li>
-        </ul>
-      </nav>
     </header>
     <main>
-      <section class="book-list">
-        <div class="book">
-          <img src="https://picsum.photos/id/598/600/400" alt="Libro 1" class="book-thumbnail" />
-          <h2>Libro 1</h2>
-          <p class="price">$10.99</p>
+      <div>
+        <div>
+          <nav>
+            <ul class="wk-ul-1">
+              <li class="wk-il-1"><a href="#">Inicio</a></li>
+              <li class="wk-il-1"><a href="#">Libros</a></li>
+              <li class="wk-il-1"><a href="#">Los más leídos</a></li>
+              <li class="wk-il-1"><a href="#">Accesorios</a></li>
+              <li class="wk-il-1"><a href="#">Sucursal</a></li>
+            </ul>
+          </nav>
         </div>
-        <div class="book">
-          <img src="book2.jpg" alt="Libro 2" class="book-thumbnail" />
-          <h2>Libro 2</h2>
-          <p class="price">$12.99</p>
+
+        <div class="hero">
+          <!-- <img src="hero-image.jpg" alt="Hero Image" /> -->
+          <div class="hero-text">
+            <h2>Creando nuevos mundos, historias y recuerdos</h2>
+            <p>"Vive con nosotros y crea futuros recuerdos"</p>
+          </div>
         </div>
-        <div class="book">
-          <img src="book3.jpg" alt="Libro 3" class="book-thumbnail" />
-          <h2>Libro 3</h2>
-          <p class="price">$8.99</p>
+      </div>
+      <section class="recommendations">
+        <h2>Recomendaciones</h2>
+        <div class="book-list">
+          <!-- Reemplaza las imágenes y textos de ejemplo con el contenido real -->
+          <div class="book">
+            <img src="book1.jpg" alt="Harry Potter y la piedra filosofal" />
+            <h3>Harry Potter y la piedra filosofal</h3>
+            <p>J. K. Rowling</p>
+            <a href="#" class="btn">Ver más</a>
+          </div>
+          <div class="book">
+            <img src="book2.jpg" alt="Cien años de soledad" />
+            <h3>Cien años de soledad</h3>
+            <p>Gabriel García Márquez</p>
+            <a href="#" class="btn">Ver más</a>
+          </div>
+          <div class="book">
+            <img src="book3.jpg" alt="La insoportable levedad del ser" />
+            <h3>La insoportable levedad del ser</h3>
+            <p>Milan Kundera</p>
+            <a href="#" class="btn">Ver más</a>
+          </div>
+          <div class="book">
+            <img src="book4.jpg" alt="Como agua para chocolate" />
+            <h3>Como agua para chocolate</h3>
+            <p>Laura Esquivel</p>
+            <a href="#" class="btn">Ver más</a>
+          </div>
         </div>
-        <!-- Agrega más libros según sea necesario -->
+      </section>
+      <section class="books">
+        <h2>Libros</h2>
+        <div class="book-list">
+          <!-- Reemplaza las imágenes y textos de ejemplo con el contenido real -->
+          <div class="book">
+            <img src="book5.jpg" alt="Fuerte es el silencio" />
+            <h3>Fuerte es el silencio</h3>
+            <p>Elena Poniatowska</p>
+            <p class="price">$450.00</p>
+            <a href="#" class="btn">Comprar</a>
+          </div>
+          <div class="book">
+            <img src="book6.jpg" alt="Rayuela" />
+            <h3>Rayuela</h3>
+            <p>Julio Cortázar</p>
+            <p class="price">$445.00</p>
+            <a href="#" class="btn">Comprar</a>
+          </div>
+          <div class="book">
+            <img src="book7.jpg" alt="La ley de Herodes" />
+            <h3>La ley de Herodes</h3>
+            <p>Jorge Ibargüengoitia</p>
+            <p class="price">$150.00</p>
+            <a href="#" class="btn">Comprar</a>
+          </div>
+          <div class="book">
+            <img src="book8.jpg" alt="Arráncame la vida" />
+            <h3>Arráncame la vida</h3>
+            <p>Ángeles Mastretta</p>
+            <p class="price">$350.00</p>
+            <a href="#" class="btn">Comprar</a>
+          </div>
+          <div class="book">
+            <img src="book9.jpg" alt="Una habitación propia" />
+            <h3>Una habitación propia</h3>
+            <p>Virginia Woolf</p>
+            <p class="price">$240.00</p>
+            <a href="#" class="btn">Comprar</a>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <h2>Conócenos</h2>
+        <p>
+          El Túnel es una cafetería ideal para los amantes de la literatura.
+          Además de su servicio de venta de libros y productos en línea, puedes
+          visitar nuestra sucursal para disfrutar de los diversos eventos
+          culturales que tenemos para ti. ¡Te esperamos!
+        </p>
+        <img src="about-image.jpg" alt="Conócenos" />
       </section>
     </main>
     <footer>
-      <p>&copy; 2024 Tienda de Libros</p>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>El Túnel</h3>
+          <p>
+            Una espacio para los amantes de la literatura. Encuentra en nuestra
+            tienda los mejores libros y productos relacionados.
+          </p>
+          <p>Síguenos en redes sociales:</p>
+          <!-- Aquí puedes agregar los íconos de redes sociales -->
+        </div>
+        <div class="footer-section">
+          <h3>Información</h3>
+          <ul>
+            <li><a href="#">Acerca de El Túnel</a></li>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+            <li><a href="#">Política de Devoluciones</a></li>
+            <li><a href="#">Términos y Condiciones</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Suscríbete</h3>
+          <p>Regístrate para recibir noticias y promociones:</p>
+          <input type="email" placeholder="Ingresa tu email" />
+          <button class="subscribe-button">Enviar</button>
+        </div>
+      </div>
+      <p>
+        &copy; 2024 El Túnel. Todos los derechos reservados. Diseñado por
+        Escuela de Código ACDIP.
+      </p>
     </footer>
   </body>
 </html>
